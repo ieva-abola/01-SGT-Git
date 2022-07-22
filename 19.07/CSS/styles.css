@@ -17,7 +17,7 @@ body {
     text-decoration: none;
 }
 
-.item:active {
+.item:active , .current-link {
     color: #e2cdd9;
 
 }
