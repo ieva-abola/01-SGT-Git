@@ -4,6 +4,7 @@ let operator = prompt("Please enter one of the operators (+, -, *, /):");
 
 
 let additionResult = Number.parseInt(firstValue) + Number.parseInt(secondValue);
+let additionConcat = firstValue + secondValue; 
 let subtractionResult = Number.parseInt(firstValue) - Number.parseInt(secondValue);
 let multiplicationResult = Number.parseInt(firstValue) * Number.parseInt(secondValue);
 let divisionResult = Number.parseInt(firstValue) / Number.parseInt(secondValue);
