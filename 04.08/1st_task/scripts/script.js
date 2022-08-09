@@ -1,44 +1,44 @@
 
 let birthday = prompt("Please enter the date of your birthday: " , "yyyy-mm-dd");
-let birthdayDate = new Date(birthday);
-let getBirthdayDate = birthdayDate.getDate();
-let getBirthdayMonth = birthdayDate.getMonth();
+let fullBirthdayDate = new Date(birthday);
+let birthdayDate = fullBirthdayDate.getDate();
+let birthdayMonth = fullBirthdayDate.getMonth();
 
 let result;
 
-if ((getBirthdayMonth == 2 && getBirthdayDate >= 21) || (getBirthdayMonth == 3 && getBirthdayDate < 20)) {
+if ((birthdayMonth == 2 && birthdayDate >= 21) || (birthdayMonth == 3 && birthdayDate < 20)) {
     result = "Aries";
-} else if ((getBirthdayMonth == 3 && getBirthdayDate >= 20) || (getBirthdayMonth == 4 && getBirthdayDate < 21)) {
+} else if ((birthdayMonth == 3 && birthdayDate >= 20) || (birthdayMonth == 4 && birthdayDate < 21)) {
     result = "Taurus"
-} else if ((getBirthdayMonth == 4 && getBirthdayDate >= 21) || (getBirthdayMonth == 5 && getBirthdayDate < 21)) {
+} else if ((birthdayMonth == 4 && birthdayDate >= 21) || (birthdayMonth == 5 && birthdayDate < 21)) {
     result = "Gemini";
-} else if ((getBirthdayMonth == 5 && getBirthdayDate >= 21) || (getBirthdayMonth == 6 && getBirthdayDate < 23)) {
+} else if ((birthdayMonth == 5 && birthdayDate >= 21) || (birthdayMonth == 6 && birthdayDate < 23)) {
     result = "Cancer";
-} else if ((getBirthdayMonth == 6 && getBirthdayDate >= 23) || (getBirthdayMonth == 7 && getBirthdayDate < 23)) {
+} else if ((birthdayMonth == 6 && birthdayDate >= 23) || (birthdayMonth == 7 && birthdayDate < 23)) {
     result = "Leo"; 
-} else if ((getBirthdayMonth == 7 && getBirthdayDate >= 23) || (getBirthdayMonth == 8 && getBirthdayDate < 23)) {
+} else if ((birthdayMonth == 7 && birthdayDate >= 23) || (birthdayMonth == 8 && birthdayDate < 23)) {
     result = "Vrigo";
-} else if ((getBirthdayMonth == 8 && getBirthdayDate >= 23) || (getBirthdayMonth == 9 && getBirthdayDate < 23)) {
+} else if ((birthdayMonth == 8 && birthdayDate >= 23) || (birthdayMonth == 9 && birthdayDate < 23)) {
     result = "Libra"; 
-} else if ((getBirthdayMonth == 9 && getBirthdayDate >= 23) || (getBirthdayMonth == 10 && getBirthdayDate < 22)) {
+} else if ((birthdayMonth == 9 && birthdayDate >= 23) || (birthdayMonth == 10 && birthdayDate < 22)) {
     result = "Scorpio";
-} else if ((getBirthdayMonth == 10 && getBirthdayDate >= 22) || (getBirthdayMonth == 11 && getBirthdayDate < 22)) {
+} else if ((birthdayMonth == 10 && birthdayDate >= 22) || (birthdayMonth == 11 && birthdayDate < 22)) {
     result = "Sagittarius";
-} else if ((getBirthdayMonth == 11 && getBirthdayDate >= 22) || (getBirthdayMonth == 0 && getBirthdayDate < 20)) {
+} else if ((birthdayMonth == 11 && birthdayDate >= 22) || (birthdayMonth == 0 && birthdayDate < 20)) {
     result = "Capricorn";
-} else if ((getBirthdayMonth == 0 && getBirthdayDate >= 20) || (getBirthdayMonth == 1 && getBirthdayDate < 19)) {
+} else if ((birthdayMonth == 0 && birthdayDate >= 20) || (birthdayMonth == 1 && birthdayDate < 19)) {
     result = "Aquarius";
-} else if ((getBirthdayMonth == 1 && getBirthdayDate >= 19) || (getBirthdayMonth == 2 && getBirthdayDate < 21)) {
+} else if ((birthdayMonth == 1 && birthdayDate >= 19) || (birthdayMonth == 2 && birthdayDate < 21)) {
     result = "Pisces"; 
 } else {
     alert("This is not a valid date!")
 }
 
-let shortMonths = ((getBirthdayMonth == 3) || (getBirthdayMonth == 5) || (getBirthdayMonth == 8) || (getBirthdayMonth == 10))
+let shortMonths = ((birthdayMonth == 3) || (birthdayMonth == 5) || (birthdayMonth == 8) || (birthdayMonth == 10))
 
 
 /// This doesn't work. It works if getBirthdayDate > 29 or any other number, but at the moment I change it to 30, it doesn't show the validation alert, but "Your zodiac sign is "+ result. 
-if ((shortMonths) && (getBirthdayDate > 30)) {
+if ((shortMonths) && (birthdayDate > 30)) {
     alert("This is not a valid date"); 
 } else if (result != undefined) {
     alert("Your zodiac sign is " + result)

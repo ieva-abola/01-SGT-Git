@@ -111,4 +111,10 @@ for (i = 0; i < numberArray.length; i++) {
     } 
 }
 
-alert("In your array you have " + smallerThanAverage.length + " numbers smaller than the average.")
+
+if (smallerThanAverage.length == 1) {
+    alert("In your array you have " + smallerThanAverage.length + " number smaller than the average.")
+} else {
+    alert("In your array you have " + smallerThanAverage.length + " numbers smaller than the average.")
+ 
+}
